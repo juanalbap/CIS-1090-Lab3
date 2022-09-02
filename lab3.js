@@ -7,7 +7,9 @@
 
 //         (use this space)
 
-
+function cube (n) {
+    return n*n*n;
+}
 
 
 
@@ -16,12 +18,12 @@
 
 //Define a function that takes a number and an expected result, calls the cube() function
 //and check that the return value matches the expected result.
-//If the answer is wrong log an aditional message
+//If the answer is wrong log an additional message
 function test(n, expectedResult){
-    let result = cube(n);
-    console.log(`cube(${n}) == ${expectedResult}? ${result == expectedResult}`);
-    if ( result != expectedResult ){
-        console.log(`Expected ${expectedResult}, but got the incorrect result ${result}`);
+    let actualResult = cube(n);
+    console.log(`cube(${n}) == ${expectedResult}? ${actualResult == expectedResult}`);
+    if ( actualResult != expectedResult ){
+        console.log(`Expected ${expectedResult}, but got the incorrect result ${actualResult}`);
     }
 }
 
